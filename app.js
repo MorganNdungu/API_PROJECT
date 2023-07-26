@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const sequelize = require('./config/database');
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes.js');
  
 // Connect to the database
 sequelize
@@ -15,5 +15,5 @@ app.use(express.json());
 // Routes
 app.use('/api', userRoutes);
  
-const PORT = 3000;
+const PORT = 3014;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

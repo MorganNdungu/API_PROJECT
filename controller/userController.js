@@ -14,6 +14,7 @@ const userController={
 
         }
         catch (error){
+            console.log(error)
             res.status(500).json({error:'failed to register user'});
 
         }
